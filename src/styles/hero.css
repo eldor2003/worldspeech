@@ -1,0 +1,102 @@
+.hero {
+  background: #fff;
+  padding-top: 70px;
+}
+.hero .container {
+  flex-direction: column;
+}
+.hero .hero__title {
+  color: #212833;
+  text-align: center;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 78px; /* 130% */
+  margin-bottom: 30px;
+}
+.hero .hero__lang {
+  color: #007bff;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+.hero .hero__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 50px;
+}
+.hero .btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .hero__how {
+  width: 100%;
+  border-radius: 10px;
+  background: #f8f8f8;
+  padding: 50px 20px 40px 20px;
+  margin-top: 75px;
+}
+.hero .hero__how--title {
+  color: #212833;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.hero .hero__how--descr {
+  margin: 0 auto;
+  max-width: 670.463px;
+  color: #7b8a99;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px; /* 19.2px */
+  margin-bottom: 41px;
+}
+.hero .hero__how__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.hero .hero__how--item {
+  max-width: 530px;
+  width: 100%;
+  border-radius: 20px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 18px 20px;
+}
+.hero .hero__how--item__content {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.hero .hero__how--item__number {
+  display: flex;
+  width: 64px;
+  height: 64px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  border: 1px solid rgba(18, 18, 18, 0.3);
+  color: #212833;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38.4px; /* 38.4px */
+}
+.hero .hero__how--item__title {
+  color: #212833;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 120%; /* 31.2px */
+}/*# sourceMappingURL=hero.css.map */
