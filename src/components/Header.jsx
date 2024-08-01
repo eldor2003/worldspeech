@@ -1,8 +1,16 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import "../styles/header.css";
+import Link from "next/link";
 
 const Header = () => {
-  const closeMenu = () => {};
+  const [menu, setMenu] = useState(false);
+  const closeMenu = () => {
+    setMenu(false);
+  };
+  const openMenu = () => {
+    setMenu(true);
+  };
   return (
     <header className="header">
       <div className="container">
@@ -11,34 +19,47 @@ const Header = () => {
             <img src="/logo-full-icon.svg" alt="logo" />
           </div>
 
-          <nav className="navbar">
-            <img
-              src="close.png"
-              className="close_icon"
-              alt="close"
-              onClick={closeMenu()}
-            />
+          <nav className={`navbar ${menu ? "active" : ""}`}>
+            <div className="menu-top">
+              <div className="row">
+                <button className="close_menu">
+                  <img
+                    src="close.png"
+                    className="close_icon"
+                    alt="close"
+                    onClick={() => closeMenu()}
+                  />
+                </button>
+              </div>
 
-            <ul>
-              <li>
-                <a href="#!">Тарифы</a>
-              </li>
-              <li>
-                <a href="#!">Безопасность</a>
-              </li>
-              <li>
-                <a href="#!">Отзывы</a>
-              </li>
-              <li>
-                <a href="#!">FAQ</a>
-              </li>
-              <li>
-                <a href="#!">Новости</a>
-              </li>
-              <li>
-                <a href="#!">Помощь</a>
-              </li>
-            </ul>
+              <ul>
+                <li>
+                  <Link href="#tarif">Тарифы</Link>
+                </li>
+                <li>
+                  <Link href="#safety">Безопасность</Link>
+                </li>
+                <li>
+                  <Link href="#feedback">Отзывы</Link>
+                </li>
+                <li>
+                  <Link href="#faq">FAQ</Link>
+                </li>
+                <li>
+                  <Link href="#news">Новости</Link>
+                </li>
+                <li>
+                  <Link href="help">Помощь</Link>
+                </li>
+              </ul>
+            </div>
+
+            <div className="menu__bottom">
+              <div className="auth">
+                <button className="btn btn-outline">Вход</button>
+                <button className="btn btn-primary">Регистрация</button>
+              </div>
+            </div>
           </nav>
 
           <div className="actions">
@@ -47,7 +68,7 @@ const Header = () => {
               <button className="btn btn-primary">Регистрация</button>
             </div>
 
-            <button className="menu_btn">
+            <button className="open_menu" onClick={() => openMenu()}>
               <img src="menu-icon.svg" alt="menu" />
             </button>
           </div>

@@ -1,5 +1,5 @@
 @import url("https://fonts.cdnfonts.com/css/helvetica-neue-55");
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -14,8 +14,22 @@ body {
   margin: 0;
   padding: 0;
 
+  overflow-x: hidden;
+
   main {
     width: 100%;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: 0 0 5px gray;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #f98a5c;
+    border-radius: 10px;
   }
 
   .container {
@@ -32,7 +46,7 @@ body {
       padding: 0 20px;
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 576px) {
       padding: 0 10px;
       width: 100%;
     }
@@ -57,6 +71,7 @@ button {
 .btn-outline {
   background: none;
   border-radius: 10px;
+  font-size: 18px;
   border: 1px solid #1d8aff;
   color: #1d8aff;
 
@@ -76,6 +91,7 @@ button {
   background: #007bff;
   color: #fff;
   border: 1px solid #1d8aff;
+  font-size: 18px;
 
   &:hover {
     opacity: 0.8;
@@ -83,4 +99,40 @@ button {
   &:active {
     opacity: 1;
   }
+}
+
+.pro {
+  color: #32c0fe !important;
+}
+
+.orange {
+  color: #ff9d14 !important;
+}
+
+.ultra {
+  color: #0d9655 !important;
+}
+
+.section-title {
+  color: #212833;
+  text-align: center;
+
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  @media (max-width: 576px) {
+    font-size: 24px;
+  }
+}
+
+.section-descr {
+  color: #7b8a99;
+  text-align: center;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 19.2px */
 }

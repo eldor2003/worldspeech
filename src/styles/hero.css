@@ -2,6 +2,16 @@
   background: #fff;
   padding-top: 70px;
 }
+@media (max-width: 1200px) {
+  .hero {
+    padding-top: 35px;
+  }
+}
+@media (max-width: 576px) {
+  .hero {
+    padding-top: 20px;
+  }
+}
 .hero .container {
   flex-direction: column;
 }
@@ -14,6 +24,25 @@
   line-height: 78px; /* 130% */
   margin-bottom: 30px;
 }
+@media (max-width: 1200px) {
+  .hero .hero__title {
+    font-size: 48px;
+  }
+}
+@media (max-width: 920px) {
+  .hero .hero__title br {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .hero .hero__title {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+}
 .hero .hero__lang {
   color: #007bff;
   text-align: center;
@@ -21,12 +50,39 @@
   font-weight: 400;
   margin-bottom: 24px;
 }
+@media (max-width: 1200px) {
+  .hero .hero__lang {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+@media (max-width: 576px) {
+  .hero .hero__lang {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+}
 .hero .hero__icons {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 16px;
   margin-bottom: 50px;
+}
+@media (max-width: 576px) {
+  .hero .hero__icons {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
 }
 .hero .btns {
   display: flex;
@@ -58,13 +114,29 @@
   margin-bottom: 41px;
 }
 .hero .hero__how__items {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
   align-items: center;
+  gap: 15px;
   margin-bottom: 40px;
 }
+@media (max-width: 1200px) {
+  .hero .hero__how__items {
+    grid-template-columns: 45% 45%;
+  }
+}
+@media (max-width: 920px) {
+  .hero .hero__how__items {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+}
+@media (max-width: 576px) {
+  .hero .hero__how__items {
+    margin-bottom: 0;
+  }
+}
 .hero .hero__how--item {
-  max-width: 530px;
   width: 100%;
   border-radius: 20px;
   background: #fff;
@@ -99,4 +171,59 @@
   font-size: 26px;
   font-weight: 400;
   line-height: 120%; /* 31.2px */
+}
+@media (max-width: 1617px) {
+  .hero .hero__how--item {
+    gap: 8px;
+  }
+  .hero .hero__how--item__content {
+    gap: 10px;
+  }
+  .hero .hero__how--item__number {
+    width: 50px;
+    height: 50px;
+  }
+  .hero .hero__how--item__title {
+    color: #212833;
+    font-size: 22px;
+  }
+}
+@media (max-width: 576px) {
+  .hero .hero__how--item {
+    gap: 20px;
+    padding: 10px;
+    flex-direction: column;
+  }
+  .hero .hero__how--item__content {
+    gap: 10px;
+    width: 100%;
+  }
+  .hero .hero__how--item__title {
+    color: #212833;
+    font-size: 22px;
+  }
+  .hero .hero__how--item__icon img {
+    width: 89px;
+    height: 96px;
+  }
+}
+@media (max-width: 1200px) {
+  .hero .hero__how {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 576px) {
+  .hero .hero__how {
+    margin-top: 40px;
+    padding: 20px 10px;
+  }
+  .hero .hero__how--title {
+    display: none;
+  }
+  .hero .hero__how--descr {
+    display: none;
+  }
+  .hero .hero__how .btns {
+    display: none;
+  }
 }/*# sourceMappingURL=hero.css.map */

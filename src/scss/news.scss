@@ -1,0 +1,127 @@
+.news {
+  width: 100%;
+  background: #fff;
+
+  padding-bottom: 90px;
+
+  .container {
+    flex-direction: column;
+
+    .section-title {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__cards {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+
+    .feedback .feedback__cards .swiper {
+      left: 10px;
+      position: relative;
+    }
+    .swiper-slide,
+    .swiper-ios .swiper-slide,
+    .swiper-wrapper {
+      transform: translate3d(0px, 0, 0);
+      padding-bottom: 40px;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #000; /* Change arrow color */
+      background-color: #fff; /* Background color of buttons */
+      border-radius: 50%; /* Rounded shape */
+      width: 40px; /* Width of the button */
+      height: 40px; /* Height of the button */
+      display: flex; /* Centering arrow icon */
+      align-items: center; /* Centering arrow icon */
+      justify-content: center; /* Centering arrow icon */
+    }
+
+    /* Arrow icons */
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      font-size: 20px; /* Size of the arrow icon */
+    }
+
+    /* Next button - position */
+    .swiper-button-next {
+      right: 10px;
+      top: auto;
+      bottom: 0px;
+    }
+
+    /* Prev button - position */
+    .swiper-button-prev {
+      left: auto;
+      top: auto;
+      bottom: 0;
+      right: 40px; /* Distance from the left edge */
+    }
+
+    .news__card {
+      width: 420px;
+      height: 564px;
+      overflow: hidden;
+
+      border-radius: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+
+      img {
+        height: 250px;
+      }
+
+      &--content {
+        padding: 0 10px;
+      }
+
+      &--name {
+        color: #1a1a1a;
+
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 27.6px; /* 27.6px */
+        margin-bottom: 20px;
+      }
+
+      &--date {
+        color: #1a1a1a;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 22px;
+      }
+
+      &--descr {
+        color: #7b8a99;
+
+        font-size: 16px;
+        line-height: 21.6px; /* 21.6px */
+        letter-spacing: 0.72px;
+        font-weight: 400;
+        margin-bottom: 20px;
+      }
+
+      &--btn {
+        padding: 0;
+        background: none;
+        color: #007bff;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.6px; /* 21.6px */
+        letter-spacing: 0.72px;
+        text-decoration-line: underline;
+      }
+    }
+  }
+
+  .all-view {
+    text-align: center;
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.72px;
+  }
+}

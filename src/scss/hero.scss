@@ -2,6 +2,13 @@
   background: #fff;
   padding-top: 70px;
 
+  @media (max-width: 1200px) {
+    padding-top: 35px;
+  }
+  @media (max-width: 576px) {
+    padding-top: 20px;
+  }
+
   .container {
     flex-direction: column;
   }
@@ -15,6 +22,24 @@
     font-weight: 400;
     line-height: 78px; /* 130% */
     margin-bottom: 30px;
+
+    @media (max-width: 1200px) {
+      font-size: 48px;
+    }
+
+    @media (max-width: 920px) {
+      br {
+        display: none;
+      }
+    }
+
+    @media (max-width: 576px) {
+      font-size: 32px;
+      font-weight: 400;
+      line-height: normal;
+      text-align: left;
+      margin-bottom: 20px;
+    }
   }
 
   .hero__lang {
@@ -24,6 +49,23 @@
     font-size: 32px;
     font-weight: 400;
     margin-bottom: 24px;
+
+    @media (max-width: 1200px) {
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    @media (max-width: 576px) {
+      font-size: 20px;
+
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 20px;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 20px;
+    }
   }
 
   .hero__icons {
@@ -33,6 +75,14 @@
     gap: 16px;
 
     margin-bottom: 50px;
+
+    @media (max-width: 576px) {
+      width: 100%;
+      justify-content: flex-start;
+      gap: 15px;
+
+      margin-bottom: 20px;
+    }
   }
 
   .btns {
@@ -73,15 +123,27 @@
     }
 
     &__items {
-      display: flex;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: 30% 30% 30%;
       align-items: center;
+      gap: 15px;
 
       margin-bottom: 40px;
+
+      @media (max-width: 1200px) {
+        grid-template-columns: 45% 45%;
+      }
+      @media (max-width: 920px) {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+      }
+      @media (max-width: 576px) {
+        margin-bottom: 0;
+      }
     }
 
     &--item {
-      max-width: 530px;
+      // max-width: 530px;
       width: 100%;
 
       border-radius: 20px;
@@ -124,6 +186,65 @@
         font-size: 26px;
         font-weight: 400;
         line-height: 120%; /* 31.2px */
+      }
+
+      @media (max-width: 1617px) {
+        gap: 8px;
+
+        &__content {
+          gap: 10px;
+        }
+
+        &__number {
+          width: 50px;
+          height: 50px;
+        }
+
+        &__title {
+          color: #212833;
+          font-size: 22px;
+        }
+      }
+      @media (max-width: 576px) {
+        gap: 20px;
+        padding: 10px;
+
+        flex-direction: column;
+
+        &__content {
+          gap: 10px;
+          width: 100%;
+        }
+
+        &__title {
+          color: #212833;
+          font-size: 22px;
+        }
+
+        &__icon img {
+          width: 89px;
+          height: 96px;
+        }
+      }
+    }
+
+    @media (max-width: 1200px) {
+      margin-top: 50px;
+    }
+    @media (max-width: 576px) {
+      margin-top: 40px;
+      padding: 20px 10px;
+
+      &--title {
+        display: none;
+      }
+
+      &--descr {
+        display: none;
+      }
+
+      .btns {
+        display: none;
       }
     }
   }
