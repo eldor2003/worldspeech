@@ -1,7 +1,17 @@
 .feedback {
   width: 100%;
   background: #fff;
-  padding-bottom: 160px;
+  padding-bottom: 80px;
+}
+@media (max-width: 920px) {
+  .feedback {
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 920px) {
+  .feedback {
+    padding-bottom: 40px;
+  }
 }
 .feedback .container {
   flex-direction: column;
@@ -18,6 +28,11 @@
   /* Next button - position */
   /* Prev button - position */
 }
+@media (max-width: 576px) {
+  .feedback .feedback__cards {
+    margin-top: 30px;
+  }
+}
 .feedback .feedback__cards .feedback .feedback__cards .swiper {
   left: 10px;
   position: relative;
@@ -28,6 +43,13 @@
 .feedback .feedback__cards .swiper-wrapper {
   transform: translate3d(0px, 0, 0);
   padding-bottom: 40px;
+}
+@media (max-width: 576px) {
+  .feedback .feedback__cards .swiper-slide,
+  .feedback .feedback__cards .swiper-ios .swiper-slide,
+  .feedback .feedback__cards .swiper-wrapper {
+    padding-bottom: 30px;
+  }
 }
 .feedback .feedback__cards .swiper-button-next,
 .feedback .feedback__cards .swiper-button-prev {
@@ -48,17 +70,30 @@
   right: 10px;
   top: auto;
   bottom: 0px;
-  /* Distance from the right edge */
+}
+@media (max-width: 576px) {
+  .feedback .feedback__cards .swiper-button-next {
+    right: 40px;
+  }
 }
 .feedback .feedback__cards .swiper-button-prev {
   left: auto;
   top: auto;
   bottom: 0;
-  right: 40px; /* Distance from the left edge */
+  right: 50px; /* Distance from the left edge */
+}
+@media (max-width: 576px) {
+  .feedback .feedback__cards .swiper-button-prev {
+    left: 40px;
+    top: auto;
+    bottom: 0;
+    right: auto;
+  }
 }
 .feedback .feedback__cards .feedback__card {
   display: flex;
-  width: 420px;
+  max-width: 420px;
+  width: 100%;
   min-height: 355px;
   padding: 20px 15px;
   flex-direction: column;
@@ -68,6 +103,11 @@
   border: 1px solid rgba(0, 0, 0, 0.2);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
+}
+@media (max-width: 576px) {
+  .feedback .feedback__cards .feedback__card {
+    max-width: 100%;
+  }
 }
 .feedback .feedback__cards .feedback__card--name {
   color: #1a1a1a;

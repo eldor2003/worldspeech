@@ -3,11 +3,21 @@
   background: #fff;
   padding-bottom: 80px;
 }
+@media (max-width: 576px) {
+  .safety {
+    padding-bottom: 40px;
+  }
+}
 .safety .container {
   flex-direction: column;
 }
 .safety .container .section-title {
   margin-bottom: 28px;
+}
+@media (max-width: 576px) {
+  .safety .container .section-title {
+    margin-bottom: 20px;
+  }
 }
 .safety .container .section-descr {
   max-width: 996px;
@@ -23,6 +33,12 @@
 @media (max-width: 920px) {
   .safety__row {
     flex-direction: column-reverse;
+  }
+}
+@media (max-width: 920px) {
+  .safety__row:last-child {
+    flex-direction: column;
+    margin-top: 20px;
   }
 }
 .safety__row--item__cards {

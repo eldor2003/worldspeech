@@ -27,6 +27,33 @@ const SwiperFeedbackComponent = () => {
       // direction="rtl" // RTL for right-to-left direction
       // onSwiper={(swiper) => console.log(swiper)}
       autoplay={{ delay: 3000 }} // 3 seconds
+      breakpoints={{
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+
+        576: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+
+        880: {
+          slidesPerView: 3,
+          spaceBetween: 15,
+        },
+
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        1700: {
+          spaceBetween: 30,
+        },
+        1920: {
+          spaceBetween: 50,
+        },
+      }}
     >
       <SwiperSlide>
         <FeedbackCard

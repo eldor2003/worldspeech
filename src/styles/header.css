@@ -2,7 +2,14 @@
   width: 100%;
   padding: 20px 0;
   background-color: #fff;
-  position: relative;
+  position: sticky;
+  top: -100px;
+  z-index: 2;
+  transition: all 0.4s ease;
+}
+.header.stick {
+  top: 0;
+  background: transparent;
 }
 .header .header_block {
   width: 100%;
@@ -54,7 +61,7 @@
     position: absolute;
     top: 0;
     right: -350px;
-    padding: 18px 10px;
+    padding: 10px 10px 28px 10px;
     opacity: 0;
     visibility: hidden;
   }
@@ -86,6 +93,9 @@
   }
 }
 @media (max-width: 676px) {
+  .header .navbar .row {
+    padding: 10px;
+  }
   .header .navbar .menu__bottom {
     display: block;
   }

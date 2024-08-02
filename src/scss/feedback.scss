@@ -1,7 +1,14 @@
 .feedback {
   width: 100%;
   background: #fff;
-  padding-bottom: 160px;
+  padding-bottom: 80px;
+
+  @media (max-width: 920px) {
+    padding-bottom: 50px;
+  }
+  @media (max-width: 920px) {
+    padding-bottom: 40px;
+  }
 
   .container {
     flex-direction: column;
@@ -17,6 +24,10 @@
 
     position: relative;
 
+    @media (max-width: 576px) {
+      margin-top: 30px;
+    }
+
     /* Custom styles for Swiper navigation arrows */
 
     .feedback .feedback__cards .swiper {
@@ -30,6 +41,10 @@
     .swiper-wrapper {
       transform: translate3d(0px, 0, 0);
       padding-bottom: 40px;
+
+      @media (max-width: 576px) {
+        padding-bottom: 30px;
+      }
     }
     .swiper-button-next,
     .swiper-button-prev {
@@ -55,7 +70,9 @@
       top: auto;
       bottom: 0px;
 
-      /* Distance from the right edge */
+      @media (max-width: 576px) {
+        right: 40px;
+      }
     }
 
     /* Prev button - position */
@@ -63,12 +80,20 @@
       left: auto;
       top: auto;
       bottom: 0;
-      right: 40px; /* Distance from the left edge */
+      right: 50px; /* Distance from the left edge */
+
+      @media (max-width: 576px) {
+        left: 40px;
+        top: auto;
+        bottom: 0;
+        right: auto;
+      }
     }
 
     .feedback__card {
       display: flex;
-      width: 420px;
+      max-width: 420px;
+      width: 100%;
       min-height: 355px;
       padding: 20px 15px;
       flex-direction: column;
@@ -79,6 +104,10 @@
       border-radius: 5px;
       border: 1px solid rgba(0, 0, 0, 0.2);
       backdrop-filter: blur(15px);
+
+      @media (max-width: 576px) {
+        max-width: 100%;
+      }
 
       &--name {
         color: #1a1a1a;

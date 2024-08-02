@@ -19,13 +19,13 @@ export default function Home() {
 
         <Safety />
 
-        {/* <Feedback /> */}
+        <Feedback />
 
-        {/* <News /> */}
+        <News />
 
-        {/* <Faq /> */}
+        <Faq />
 
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </main>
   );

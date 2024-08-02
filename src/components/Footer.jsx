@@ -12,6 +12,15 @@ const Footer = () => {
             <img src="/logo-full-icon.svg" alt="logo" />
           </div>
 
+          <div className="row footer_mobile--link">
+            <Link href={"#!"}>
+              <img src="/tg_icon.svg" alt="" />
+            </Link>
+            <Link href={"#!"}>
+              <img src="/youtube_icon.svg" alt="" />
+            </Link>
+          </div>
+
           <nav className="navbar">
             <ul>
               <li>

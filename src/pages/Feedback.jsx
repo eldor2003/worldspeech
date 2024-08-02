@@ -1,14 +1,33 @@
+"use client";
+
 import FeedbackCard from "@/components/Feedback__card";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import "../styles/feedback.css";
 import SwiperFeedbackComponent from "@/components/SwiperFeedbackComponent";
 
 const Feedback = () => {
+  const [title, setTitle] = useState("Мнения наших клиентов");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.innerWidth > 576) {
+        setTitle("Мнения наших клиентов");
+      } else {
+        setTitle("Отзывы");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div className="feedback">
       <div className="container">
-        <div className="section-title">Мнения наших клиентов</div>
+        <div className="section-title">{title}</div>
 
         <div className="feedback__cards">
           <SwiperFeedbackComponent />

@@ -1,18 +1,34 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/header.css";
 import Link from "next/link";
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
+  const [stick, setStick] = useState(false);
   const closeMenu = () => {
     setMenu(false);
   };
   const openMenu = () => {
     setMenu(true);
   };
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 150) {
+        setStick(true);
+      } else {
+        setStick(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <header className="header">
+    <header className={`header ${stick ? "stick" : ""}`}>
       <div className="container">
         <div className="header_block">
           <div className="logo">

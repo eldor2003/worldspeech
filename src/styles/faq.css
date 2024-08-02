@@ -9,6 +9,11 @@
 .faq .container .section-title {
   margin-bottom: 50px;
 }
+@media (max-width: 576px) {
+  .faq .container .section-title {
+    margin-bottom: 30px;
+  }
+}
 .faq .container .accordion {
   width: 100%;
   border-radius: 10px 10px 0px 0px;
@@ -38,6 +43,20 @@
 .faq .container .accordion .accordionItem .accordionHeader:hover {
   background-color: #e2e2e2;
 }
+.faq .container .accordion .accordionItem .accordionHeader .acc__icon {
+  width: 24px;
+  height: 24px;
+}
+@media (max-width: 576px) {
+  .faq .container .accordion .accordionItem .accordionHeader {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px;
+  }
+}
 .faq .container .accordion .accordionItem .accordionContent {
   max-height: 0;
   overflow: hidden;
@@ -50,6 +69,6 @@
   font-weight: 400;
 }
 .faq .container .accordion .accordionItem .accordionContent.active {
-  max-height: 200px;
+  max-height: 100%;
   padding: 15px 15px;
 }/*# sourceMappingURL=faq.css.map */

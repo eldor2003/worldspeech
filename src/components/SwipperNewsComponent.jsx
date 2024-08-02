@@ -21,10 +21,23 @@ const SwiperNewsComponent = () => {
       loop={true}
       modules={[Navigation, A11y, Autoplay]}
       spaceBetween={50}
-      slidesPerView={4}
+      slidesPerView={1}
       navigation
-      autoplay={{ delay: 3000 }} // 3 seconds
+      // autoplay={{ delay: 3000 }} // 3 seconds
       direction="horizontal"
+      breakpoints={{
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 5,
+          direction: "vertical",
+        },
+
+        576: {
+          slidesPerView: 1,
+          spaceBetween: 15,
+          direction: "horizontal",
+        },
+      }}
     >
       <SwiperSlide>
         <NewsCard
@@ -35,8 +48,25 @@ const SwiperNewsComponent = () => {
             "Lorem ipsum dolor sit amet consectetur. Ipsum dictum neque vulputate suspendisse odio. Lorem ipsum dolor sit amet consectetur. Ipsum dictum neque vulputate suspendisse odio. Lorem ipsum dolor sit amet consectetur. Ipsum dictum neque vulputate suspendisse odio. "
           }
         />
-      </SwiperSlide>
-      <SwiperSlide>
+
+        <NewsCard
+          img={"news-img.jpg"}
+          name={"Название новости Название новостиНазвание новости"}
+          date={"12 марта 2024"}
+          descr={
+            "Lorem ipsum dolor sit amet consectetur. Ipsum dictum neque vulputate suspendisse odio. Lorem ipsum dolor sit amet consectetur. Ipsum dictum neque vulputate suspendisse odio. Lorem ipsum dolor sit amet consectetur. Ipsum dictum neque vulputate suspendisse odio. "
+          }
+        />
+
+        <NewsCard
+          img={"news-img.jpg"}
+          name={"Название новости Название новостиНазвание новости"}
+          date={"12 марта 2024"}
+          descr={
+            "Lorem ipsum dolor sit amet consectetur. Ipsum dictum neque vulputate suspendisse odio. Lorem ipsum dolor sit amet consectetur. Ipsum dictum neque vulputate suspendisse odio. Lorem ipsum dolor sit amet consectetur. Ipsum dictum neque vulputate suspendisse odio. "
+          }
+        />
+
         <NewsCard
           img={"news-img.jpg"}
           name={"Название новости Название новостиНазвание новости"}
@@ -55,8 +85,7 @@ const SwiperNewsComponent = () => {
             "Lorem ipsum dolor sit amet consectetur. Ipsum dictum neque vulputate suspendisse odio. Lorem ipsum dolor sit amet consectetur. Ipsum dictum neque vulputate suspendisse odio. Lorem ipsum dolor sit amet consectetur. Ipsum dictum neque vulputate suspendisse odio. "
           }
         />
-      </SwiperSlide>
-      <SwiperSlide>
+
         <NewsCard
           img={"news-img.jpg"}
           name={"Название новости Название новостиНазвание новости"}
@@ -65,8 +94,16 @@ const SwiperNewsComponent = () => {
             "Lorem ipsum dolor sit amet consectetur. Ipsum dictum neque vulputate suspendisse odio. Lorem ipsum dolor sit amet consectetur. Ipsum dictum neque vulputate suspendisse odio. Lorem ipsum dolor sit amet consectetur. Ipsum dictum neque vulputate suspendisse odio. "
           }
         />
-      </SwiperSlide>
-      <SwiperSlide>
+
+        <NewsCard
+          img={"news-img.jpg"}
+          name={"Название новости Название новостиНазвание новости"}
+          date={"12 марта 2024"}
+          descr={
+            "Lorem ipsum dolor sit amet consectetur. Ipsum dictum neque vulputate suspendisse odio. Lorem ipsum dolor sit amet consectetur. Ipsum dictum neque vulputate suspendisse odio. Lorem ipsum dolor sit amet consectetur. Ipsum dictum neque vulputate suspendisse odio. "
+          }
+        />
+
         <NewsCard
           img={"news-img.jpg"}
           name={"Название новости Название новостиНазвание новости"}

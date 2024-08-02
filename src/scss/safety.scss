@@ -4,11 +4,19 @@
 
   padding-bottom: 80px;
 
+  @media (max-width: 576px) {
+    padding-bottom: 40px;
+  }
+
   .container {
     flex-direction: column;
 
     .section-title {
       margin-bottom: 28px;
+
+      @media (max-width: 576px) {
+        margin-bottom: 20px;
+      }
     }
 
     .section-descr {
@@ -27,6 +35,13 @@
 
     @media (max-width: 920px) {
       flex-direction: column-reverse;
+    }
+
+    &:last-child {
+      @media (max-width: 920px) {
+        flex-direction: column;
+        margin-top: 20px;
+      }
     }
     &--item__cards {
       display: flex;
