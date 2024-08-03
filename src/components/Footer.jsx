@@ -65,7 +65,7 @@ const Footer = () => {
         <div className="footer__bottom">
           <div className="footer__bottom--left">
             <Link href={"#!"}>Политика обработки персональных данных</Link>
-            <Link href={"#!"}>Оферта</Link>
+            <Link href={"/offer"}>Оферта</Link>
           </div>
 
           <div className="footer__bottom--right">

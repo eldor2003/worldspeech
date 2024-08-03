@@ -59,13 +59,13 @@ const Faq = () => {
     },
   ];
   return (
-    <div className="faq">
+    <section className="faq" id="faq">
       <div className="container">
         <div className="section-title">Часто задаваемые вопросы</div>
 
         <Accordion items={items} />
       </div>
-    </div>
+    </section>
   );
 };
 

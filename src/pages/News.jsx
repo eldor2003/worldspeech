@@ -4,7 +4,7 @@ import "../styles/news.css";
 
 const News = () => {
   return (
-    <div className="news">
+    <section className="news" id="news">
       <div className="container">
         <div className="section-title">Новости проекта</div>
 
@@ -15,7 +15,7 @@ const News = () => {
           <button className="btn-outline all-view">Смотреть все</button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

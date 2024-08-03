@@ -16,16 +16,16 @@
 }
 .faq .container .accordion {
   width: 100%;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0 0;
   border: 1px solid rgba(0, 0, 0, 0.2);
   background: #fff;
   overflow: hidden;
 }
-.faq .container .accordion .accordionItem {
+.faq .container .accordionItem {
   width: 100%;
   overflow: hidden;
 }
-.faq .container .accordion .accordionItem .accordionHeader {
+.faq .container .accordionItem .accordionHeader {
   margin-bottom: -2px;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
@@ -40,15 +40,15 @@
   align-items: center;
   justify-content: space-between;
 }
-.faq .container .accordion .accordionItem .accordionHeader:hover {
+.faq .container .accordionItem .accordionHeader:hover {
   background-color: #e2e2e2;
 }
-.faq .container .accordion .accordionItem .accordionHeader .acc__icon {
+.faq .container .accordionItem .accordionHeader .acc__icon {
   width: 24px;
   height: 24px;
 }
 @media (max-width: 576px) {
-  .faq .container .accordion .accordionItem .accordionHeader {
+  .faq .container .accordionItem .accordionHeader {
     color: #000;
     font-size: 16px;
     font-style: normal;
@@ -57,10 +57,10 @@
     padding: 10px;
   }
 }
-.faq .container .accordion .accordionItem .accordionContent {
+.faq .container .accordionItem .accordionContent {
   max-height: 0;
   overflow: hidden;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
   padding: 0 15px;
   background-color: #fff;
   color: #1a1a1a;
@@ -68,7 +68,7 @@
   font-size: 14px;
   font-weight: 400;
 }
-.faq .container .accordion .accordionItem .accordionContent.active {
-  max-height: 100%;
+.faq .container .accordionItem .accordionContent.active {
+  max-height: 100vh; /* Adjust based on content height */
   padding: 15px 15px;
 }/*# sourceMappingURL=faq.css.map */

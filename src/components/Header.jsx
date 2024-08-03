@@ -12,6 +12,7 @@ const Header = () => {
   const openMenu = () => {
     setMenu(true);
   };
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 150) {
@@ -31,9 +32,9 @@ const Header = () => {
     <header className={`header ${stick ? "stick" : ""}`}>
       <div className="container">
         <div className="header_block">
-          <div className="logo">
+          <Link href={"/"} className="logo">
             <img src="/logo-full-icon.svg" alt="logo" />
-          </div>
+          </Link>
 
           <nav className={`navbar ${menu ? "active" : ""}`}>
             <div className="menu-top">
@@ -80,8 +81,12 @@ const Header = () => {
 
           <div className="actions">
             <div className="auth">
-              <button className="btn btn-outline">Вход</button>
-              <button className="btn btn-primary">Регистрация</button>
+              <Link href={"/auth/login"} className="btn btn-outline">
+                Вход
+              </Link>
+              <Link href={"/auth/register"} className="btn btn-primary">
+                Регистрация
+              </Link>
             </div>
 
             <button className="open_menu" onClick={() => openMenu()}>

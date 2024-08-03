@@ -25,7 +25,7 @@ const Feedback = () => {
     };
   }, []);
   return (
-    <div className="feedback">
+    <section className="feedback" id="feedback">
       <div className="container">
         <div className="section-title">{title}</div>
 
@@ -33,7 +33,7 @@ const Feedback = () => {
           <SwiperFeedbackComponent />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

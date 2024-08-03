@@ -6,7 +6,7 @@ import SafetyCardWidthBg from "@/components/Safety__card__width__bg";
 const Safety = () => {
   return (
     // Safety => Безопасность => Xavfsizlik
-    <div className="safety">
+    <section className="safety" id="safety">
       <div className="container">
         <h2 className="section-title">
           Безопасность ваших данных и конфиденциальность
@@ -76,7 +76,7 @@ const Safety = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

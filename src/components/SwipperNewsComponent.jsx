@@ -25,6 +25,7 @@ const SwiperNewsComponent = () => {
       navigation
       // autoplay={{ delay: 3000 }} // 3 seconds
       direction="horizontal"
+      allowTouchMove={true}
       breakpoints={{
         0: {
           slidesPerView: 1,

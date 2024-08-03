@@ -3,7 +3,7 @@ import "/src/styles/tarif.css";
 
 const Tarif = () => {
   return (
-    <section className="tarif">
+    <section className="tarif" id="tarif">
       <div className="container">
         <div className="section-title">Тарифы</div>
         <div className="section-descr">

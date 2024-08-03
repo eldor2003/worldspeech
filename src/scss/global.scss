@@ -9,6 +9,10 @@
   transition: all ease 0.25s;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f0f0f0;
   margin: 0;
@@ -62,7 +66,8 @@ ol {
   list-style: none;
 }
 
-button {
+button,
+.btn {
   border: none;
   cursor: pointer;
   padding: 13px 24px;
@@ -119,7 +124,7 @@ button {
 
   font-size: 35px;
   font-style: normal;
-  font-weight: 550;
+  font-weight: 500;
   line-height: normal;
 
   @media (max-width: 576px) {
@@ -135,4 +140,22 @@ button {
   font-style: normal;
   font-weight: 500;
   line-height: 120%; /* 19.2px */
+}
+
+.section__date--refresh {
+  color: #007bff;
+
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  margin-top: 10px;
+  margin-bottom: 30px;
+
+  @media (max-width: 576px) {
+    font-size: 16px;
+
+    margin-bottom: 20px;
+  }
 }
