@@ -1,9 +1,18 @@
+import MeetingForm from "@/components/MeetingForm";
+import Sidebar from "@/components/SideBar";
 import React from "react";
+
+import "../../styles/dashboard.css";
 
 const Dashboard = () => {
   return (
-    <div>
-      <h1>Dashboard page</h1>
+    <div className="dashboard">
+      <div className="container">
+        <Sidebar />
+        <div className="dashboard__main">
+          <MeetingForm />
+        </div>
+      </div>
     </div>
   );
 };

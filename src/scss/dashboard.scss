@@ -1,0 +1,23 @@
+.dashboard {
+  width: 100%;
+  background-color: #fff;
+
+  .container {
+    width: 100vw !important;
+
+    margin: 0;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding: 0;
+
+    .dashboard__main {
+      display: flex;
+
+      width: calc(100vw - 250px);
+
+      justify-content: flex-start;
+    }
+  }
+}

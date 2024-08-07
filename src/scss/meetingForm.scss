@@ -1,0 +1,237 @@
+// src/components/MeetingForm.scss
+.dashbord__content {
+  width: 100%;
+  padding: 38px 40px;
+
+  display: flex;
+  gap: 30px;
+
+  height: 100vh;
+  overflow: auto;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
+
+  &--left {
+    max-width: 740px;
+    width: 100%;
+
+    .section-title {
+      text-align: left;
+      margin-bottom: 63px;
+    }
+
+    &__description {
+      margin-bottom: 50px;
+      b {
+        display: inline-block;
+        color: #121212;
+
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 21.6px; /* 21.6px */
+
+        margin-bottom: 21px;
+      }
+
+      .date {
+        color: #7b8a99;
+
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 19px; /* 19.2px */
+      }
+    }
+
+    .upload-section {
+      border-radius: 40px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background: #fff;
+      max-width: 740px;
+      width: 100%;
+      min-height: 490px;
+      flex-shrink: 0;
+      padding: 25px;
+
+      .file__upload {
+        border-radius: 20px;
+        border: 1px solid rgba(18, 18, 18, 0.1);
+        padding: 56px 15px;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+        svg {
+          display: block;
+          margin-bottom: 20px;
+        }
+
+        .btn-primary {
+          display: block;
+          margin-bottom: 30px;
+        }
+
+        .drag__and__drop {
+          color: #121212;
+
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 120%; /* 26.4px */
+          margin-bottom: 20px;
+        }
+
+        .spekers {
+          display: flex;
+          gap: 10px;
+
+          color: #007bff;
+
+          font-family: "Lato", sans-serif;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 120%; /* 19.2px */
+
+          margin-bottom: 56px;
+        }
+
+        .file__type {
+          color: #7a7a7a;
+
+          font-family: "Montserrat", sans-serif;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 120%; /* 19.2px */
+        }
+      }
+    }
+  }
+
+  &--right {
+    margin-top: 100px;
+    .meeting-form {
+      width: 100%;
+      max-width: 800px;
+
+      .conference-section {
+        h3 {
+          color: #121212;
+
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 21.6px; /* 21.6px */
+
+          margin-bottom: 21px;
+        }
+
+        .descr {
+          color: #7b8a99;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 120%; /* 19.2px */
+          margin-bottom: 31px;
+        }
+
+        label {
+          display: block;
+          margin-bottom: 10px;
+
+          color: #121212;
+
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 19px; /* 19.2px */
+          margin-bottom: 20px;
+
+          input,
+          select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 10px;
+            margin-top: 21px;
+            // background-color: red;
+
+            outline: none;
+
+            &:focus {
+              box-shadow: 0 0 5px #007bff85;
+            }
+          }
+
+          input {
+            border-radius: 10px;
+            border: 1px solid #d9d9d9;
+
+            &::placeholder {
+              color: #d9d9d9;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 120%; /* 19.2px */
+            }
+          }
+        }
+
+        .row {
+          display: flex;
+
+          &.row1 {
+            gap: 16px;
+            margin-top: -10px;
+            margin-bottom: 20px;
+
+            a {
+              color: #4085fe;
+
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 120%; /* 16.8px */
+            }
+
+            span {
+              color: #1c1c1c;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 120%; /* 16.8px */
+            }
+          }
+          &.row2 {
+            gap: 30px;
+            align-items: center;
+
+            .btn-primary {
+              padding: 13px 20px;
+            }
+
+            .links {
+              display: flex;
+              gap: 17px;
+              a {
+                img {
+                  width: 40px;
+                  height: 40px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -41,7 +41,7 @@ const Header = () => {
               <div className="row">
                 <button className="close_menu">
                   <img
-                    src="close.png"
+                    src="/close.png"
                     className="close_icon"
                     alt="close"
                     onClick={() => closeMenu()}
@@ -90,7 +90,7 @@ const Header = () => {
             </div>
 
             <button className="open_menu" onClick={() => openMenu()}>
-              <img src="menu-icon.svg" alt="menu" />
+              <img src="/menu-icon.svg" alt="menu" />
             </button>
           </div>
         </div>

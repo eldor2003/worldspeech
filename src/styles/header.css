@@ -64,6 +64,7 @@
     padding: 10px 10px 28px 10px;
     opacity: 0;
     visibility: hidden;
+    display: none;
   }
   .header .navbar.active {
     right: 0;

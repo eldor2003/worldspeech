@@ -1,12 +1,10 @@
+import RegisterUsernameContent from "@/components/registerUsernameContent";
 import Link from "next/link";
 import React from "react";
 
-import "../../../styles/register.css";
-import RegisterContent from "@/components/registerContent";
-import RegisterPasswordContent from "@/components/registerPasswordContent";
-import RegisterUsernameContent from "@/components/registerUsernameContent";
+import "../../../../styles/register.css";
 
-const Register = () => {
+const RegisterUsername = () => {
   return (
     <div className="register">
       <div className="container">
@@ -19,7 +17,7 @@ const Register = () => {
 
             {/* =========== */}
 
-            <RegisterContent />
+            <RegisterUsernameContent />
 
             {/* ============ */}
 
@@ -39,4 +37,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default RegisterUsername;

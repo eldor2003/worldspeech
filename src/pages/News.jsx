@@ -1,6 +1,7 @@
 import SwiperNewsComponent from "@/components/SwipperNewsComponent";
 import React from "react";
 import "../styles/news.css";
+import Link from "next/link";
 
 const News = () => {
   return (
@@ -12,7 +13,9 @@ const News = () => {
           <SwiperNewsComponent />
         </div>
         <div className="btns">
-          <button className="btn-outline all-view">Смотреть все</button>
+          <Link href={"/project-news"} className="btn btn-outline all-view">
+            Смотреть все
+          </Link>
         </div>
       </div>
     </section>

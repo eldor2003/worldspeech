@@ -41,14 +41,14 @@ const Safety = () => {
           </div>
 
           <div className="safety__row--item__bg">
-            <SafetyCardWidthBg title={"Онлайн решение"} bg={"nout.svg"} />
+            <SafetyCardWidthBg title={"Онлайн решение"} bg={"/nout.svg"} />
           </div>
         </div>
         <div className="safety__row">
           <div className="safety__row--item__bg">
             <SafetyCardWidthBg
               title={"Коробочное решение"}
-              bg={"audio-v-text.svg"}
+              bg={"/audio-v-text.svg"}
             />
           </div>
 
